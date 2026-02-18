@@ -12,7 +12,8 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Addbtn from "../addbtn/Addbtn";
 
-export default function ProductCard({ product }) {
+export default function ProductCard({ product }: any) 
+ {
     return (
         <Card className="w-full md:w-1/2 lg:w-1/4 ">
             <Link href={`products/${product.id}`}>
