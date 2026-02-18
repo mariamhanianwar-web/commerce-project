@@ -10,7 +10,8 @@ export default async function Category() {
   return (
     <div className="container w-[80%] mx-auto">
       <div className="flex flex-wrap">
-        {data.map((category) => (
+        {data.map((category : any) => (
+
           <div key={category._id} className='w-1/3'>
             <div className="inner p-4">
               <img 
