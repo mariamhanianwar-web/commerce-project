@@ -21,7 +21,8 @@ export default function Register() {
       phone:'',
     },
     resolver:zodResolver(schema)})
-  async function handelRegister(values){
+  async function handelRegister(values: any){
+    
     console.log("FORM SUBMITTED")
     try{
       let {data} = await axios.post(`https://ecommerce.routemisr.com/api/v1/auth/signup`,values)
