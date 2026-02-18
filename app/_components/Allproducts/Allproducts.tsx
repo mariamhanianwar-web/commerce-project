@@ -7,7 +7,9 @@ export default async function Allproducts() {
     return <>
         <div className="container w-[80%] mx-auto">
             <div className="flex flex-wrap p-5 gap-6">
-                {data.map((Product) =>
+                {data.map((Product:any) =>
+                
+
                 (<ProductCard key={Product._id} product={Product} />
                 ))}
             </div> </div>
