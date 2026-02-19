@@ -2,7 +2,6 @@ import { getAccessToken } from "../schema/access-token"
 
 export async function addToCart(productId: string) {
   const token = await getAccessToken()
-
   if (!token) {
     throw new Error("Unauthorized")
   }
@@ -11,7 +10,7 @@ export async function addToCart(productId: string) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "token": token 
+      "token": token
     },
     body: JSON.stringify({ productId }),
   })
